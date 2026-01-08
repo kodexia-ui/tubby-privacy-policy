@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TUBBY — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the TUBBY mobile game." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2b;
+      --text:#e7eefc;
+      --muted:#a8b3c7;
+      --line:rgba(255,255,255,.08);
+      --accent:#6aa7ff;
+      --accent2:#39d98a;
+      --shadow: 0 14px 40px rgba(0,0,0,.45);
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Noto Sans Arabic", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 600px at 14% -10%, rgba(106,167,255,.24), transparent 62%),
+        radial-gradient(900px 540px at 92% 0%, rgba(57,217,138,.18), transparent 58%),
+        linear-gradient(180deg, #070c16, var(--bg));
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(140%) blur(10px);
+      background: rgba(7,12,22,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .bar{
+      max-width:1020px; margin:0 auto; padding:14px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .mark{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(106,167,255,.95), rgba(57,217,138,.9));
+      box-shadow: var(--shadow);
+    }
+    .brand h1{margin:0; font-size:16px; letter-spacing:.2px}
+    .brand .sub{margin:0; color:var(--muted); font-size:12px}
+
+    .lang{
+      display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:flex-end;
+    }
+    .tab{
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(15,26,43,.55);
+      color:var(--text);
+      font-size:13px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .tab:hover{border-color: rgba(106,167,255,.55)}
+    .tab.active{
+      background: linear-gradient(135deg, rgba(106,167,255,.18), rgba(57,217,138,.14));
+      border-color: rgba(106,167,255,.55);
+    }
+
+    .wrap{max-width:1020px; margin:0 auto; padding:22px 16px 64px}
+    .hero{
+      display:flex; flex-direction:column; gap:8px;
+      padding:18px 0 6px;
+    }
+    .hero h2{margin:0; font-size:30px}
+    .meta{color:var(--muted); font-size:13px; display:flex; gap:10px; flex-wrap:wrap}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(15,26,43,.45);
+      color:var(--muted);
+      font-size:12px;
+    }
+    .pill strong{color:var(--text); font-weight:700}
+
+    .panel{
+      background: rgba(15,26,43,.78);
+      border:1px solid var(--line);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      padding:18px;
+      margin-top:14px;
+    }
+    .panel h3{margin:0 0 10px; font-size:16px}
+    .panel p, .panel li{
+      margin:0;
+      color:var(--text);
+      line-height:1.68;
+      font-size:14px;
+    }
+    .panel p + p{margin-top:10px}
+    .panel ul{margin:10px 0 0; padding-left:18px}
+    .panel li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .note{
+      margin-top:12px;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(106,167,255,.25);
+      background: rgba(106,167,255,.08);
+      color:var(--text);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media(min-width:980px){
+      .grid{grid-template-columns: 1fr 1fr}
+    }
+    .footer{
+      margin-top:18px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    section.langsec{display:none}
+    section.langsec.active{display:block}
+    .rtl{direction:rtl; text-align:right}
+    .rtl ul{padding-right:18px; padding-left:0}
+    .rtl li{margin:6px 0}
+
+    .anchor{scroll-margin-top:92px}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <h1>TUBBY</h1>
+        <p class="sub">Privacy Policy</p>
+      </div>
+    </div>
+
+    <div class="lang" aria-label="Language selector">
+      <button class="tab active" data-lang="en" type="button">EN</button>
+      <button class="tab" data-lang="de" type="button">DE</button>
+      <button class="tab" data-lang="tr" type="button">TR</button>
+      <button class="tab" data-lang="ar" type="button">AR</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h2>Privacy Policy</h2>
+    <div class="meta">
+      <span class="pill"><strong>App</strong> TUBBY</span>
+      <span class="pill"><strong>Last updated</strong> 2026-01-08</span>
+      <span class="pill"><strong>Contact</strong> <a href="mailto:kodexia19@gmail.com">kodexia19@gmail.com</a></span>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <section id="sec-en" class="langsec active">
+    <div class="panel anchor">
+      <h3>Overview</h3>
+      <p>
+        This Privacy Policy explains how information is handled when you use <strong>TUBBY</strong> (the “App”).
+        The App is a mobile game that may display ads and may provide online leaderboards.
+      </p>
+
+      <div class="note">
+        <strong>Key point:</strong> We do not request or store personal information such as your name, address, phone number, or email inside the game.
+        However, certain <strong>third-party services</strong> used by the App may process data to provide ads and leaderboards.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h3>Services We Use</h3>
+        <ul>
+          <li><strong>Google AdMob</strong> — used to display advertisements.</li>
+          <li><strong>Google Play Games Services (Leaderboards)</strong> — used to submit scores and display your ranking/position.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          These services are provided by Google and operate under their own privacy policies.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>Information Processed</h3>
+        <ul>
+          <li><strong>Leaderboards:</strong> Score submissions and your leaderboard position may be associated with your Google Play Games profile.</li>
+          <li><strong>Ads:</strong> Ad services may process device identifiers and basic app usage signals to serve and measure ads.</li>
+          <li><strong>Local game data:</strong> Game progress or preferences may be stored locally on your device (e.g., settings or local scores).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>How This Information Is Used</h3>
+      <ul>
+        <li>To provide core gameplay functionality (including saving local settings).</li>
+        <li>To submit scores and show leaderboard rankings (Google Play Games Services).</li>
+        <li>To display and measure advertisements (AdMob).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Sharing</h3>
+      <p>
+        We do not sell your personal information. Data may be processed by third parties (Google services) solely to provide ads and leaderboard functionality.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Children</h3>
+      <p>
+        The App is not intended to knowingly collect personal information from children. If you believe a child has provided personal data through a Google service,
+        please contact us and/or review Google’s account and privacy settings.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Your Choices</h3>
+      <ul>
+        <li>You may disable personalized ads via your device/Google settings where available.</li>
+        <li>You may sign out of Google Play Games to limit leaderboard features (rankings may not work when signed out).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Contact</h3>
+      <p>Email: <strong><a href="mailto:kodexia19@gmail.com">kodexia19@gmail.com</a></strong></p>
+      <div class="footer">We may update this policy from time to time. Please check this page for changes.</div>
+    </div>
+  </section>
+
+  <!-- GERMAN -->
+  <section id="sec-de" class="langsec">
+    <div class="panel anchor">
+      <h3>Überblick</h3>
+      <p>
+        Diese Datenschutzerklärung erläutert, wie Informationen beim Verwenden von <strong>TUBBY</strong> (der „App“) verarbeitet werden.
+        Die App ist ein Mobile-Game, das Werbung anzeigen und Online-Bestenlisten bereitstellen kann.
+      </p>
+
+      <div class="note">
+        <strong>Wichtig:</strong> Wir fragen in der App keine personenbezogenen Daten wie Name, Adresse, Telefonnummer oder E-Mail ab und speichern sie nicht.
+        Bestimmte <strong>Drittanbieter-Dienste</strong> können jedoch Daten verarbeiten, um Werbung und Bestenlisten bereitzustellen.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h3>Verwendete Dienste</h3>
+        <ul>
+          <li><strong>Google AdMob</strong> — zur Anzeige von Werbung.</li>
+          <li><strong>Google Play Games Services (Bestenlisten)</strong> — zum Übermitteln von Scores und Anzeigen deiner Platzierung.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          Diese Dienste werden von Google bereitgestellt und unterliegen deren eigenen Datenschutzrichtlinien.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>Verarbeitete Informationen</h3>
+        <ul>
+          <li><strong>Bestenlisten:</strong> Score-Übermittlungen und deine Platzierung können mit deinem Google Play Games-Profil verknüpft sein.</li>
+          <li><strong>Werbung:</strong> Werbedienste können Gerätekennungen und grundlegende Nutzungs-Signale verarbeiten, um Werbung auszuliefern und zu messen.</li>
+          <li><strong>Lokale Spieldaten:</strong> Fortschritt/Einstellungen können lokal auf deinem Gerät gespeichert werden (z. B. Optionen oder lokale Scores).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Wofür werden diese Informationen genutzt?</h3>
+      <ul>
+        <li>Zur Bereitstellung der Spielfunktionen (inkl. lokaler Einstellungen).</li>
+        <li>Zum Senden von Scores und Anzeigen von Ranglisten (Google Play Games Services).</li>
+        <li>Zur Anzeige und Messung von Werbung (AdMob).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Weitergabe</h3>
+      <p>
+        Wir verkaufen keine personenbezogenen Daten. Daten können von Drittanbietern (Google-Diensten) verarbeitet werden,
+        ausschließlich zur Bereitstellung von Werbung und Bestenlisten.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Kinder</h3>
+      <p>
+        Die App ist nicht darauf ausgelegt, wissentlich personenbezogene Daten von Kindern zu erfassen.
+        Wenn du glaubst, dass über einen Google-Dienst Daten eines Kindes verarbeitet werden, kontaktiere uns bitte
+        und/oder prüfe die Google-Konto- und Datenschutzeinstellungen.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Deine Optionen</h3>
+      <ul>
+        <li>Personalisierte Werbung kann (falls verfügbar) in den Geräte-/Google-Einstellungen deaktiviert werden.</li>
+        <li>Du kannst dich von Google Play Games abmelden, um Bestenlisten-Funktionen einzuschränken (Ranglisten können dann nicht funktionieren).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Kontakt</h3>
+      <p>E-Mail: <strong><a href="mailto:kodexia19@gmail.com">kodexia19@gmail.com</a></strong></p>
+      <div class="footer">Wir können diese Erklärung gelegentlich aktualisieren. Bitte prüfe diese Seite auf Änderungen.</div>
+    </div>
+  </section>
+
+  <!-- TURKISH -->
+  <section id="sec-tr" class="langsec">
+    <div class="panel anchor">
+      <h3>Genel Bakış</h3>
+      <p>
+        Bu Gizlilik Politikası, <strong>TUBBY</strong> (“Uygulama”) oyununu kullandığınızda bilgilerin nasıl işlendiğini açıklar.
+        Uygulama reklam gösterebilir ve çevrimiçi lider tabloları (sıralama) sunabilir.
+      </p>
+
+      <div class="note">
+        <strong>Önemli:</strong> Oyun içinde ad, adres, telefon veya e-posta gibi kişisel bilgilerinizi istemeyiz ve saklamayız.
+        Ancak Uygulamanın kullandığı bazı <strong>üçüncü taraf hizmetler</strong> reklam ve sıralama için belirli verileri işleyebilir.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h3>Kullandığımız Hizmetler</h3>
+        <ul>
+          <li><strong>Google AdMob</strong> — reklam göstermek için.</li>
+          <li><strong>Google Play Oyun Hizmetleri (Lider Tablosu)</strong> — skor göndermek ve sıralamanızı/kaçıncı olduğunuzu göstermek için.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          Bu hizmetler Google tarafından sağlanır ve kendi gizlilik politikalarına tabidir.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>İşlenen Bilgiler</h3>
+        <ul>
+          <li><strong>Lider tablosu:</strong> Skor gönderimleri ve sıralamanız, Google Play Oyun profili ile ilişkilendirilebilir.</li>
+          <li><strong>Reklam:</strong> Reklam hizmetleri, reklam gösterimi ve ölçümü için cihaz tanımlayıcıları ve temel kullanım sinyallerini işleyebilir.</li>
+          <li><strong>Yerel oyun verisi:</strong> Oyun ayarları/ilerleme gibi bilgiler cihazınızda yerel olarak saklanabilir.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Bu Bilgiler Ne İçin Kullanılır?</h3>
+      <ul>
+        <li>Oyunun temel işlevlerini sağlamak (yerel ayarlar dahil).</li>
+        <li>Skorları göndermek ve lider tablosunda sıralamayı göstermek.</li>
+        <li>Reklamları göstermek ve performansını ölçmek.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Paylaşım</h3>
+      <p>
+        Kişisel verilerinizi satmayız. Veriler, yalnızca reklam ve lider tablosu işlevlerini sağlamak amacıyla üçüncü taraflar (Google hizmetleri) tarafından işlenebilir.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Çocuklar</h3>
+      <p>
+        Uygulama çocuklardan bilerek kişisel veri toplamayı hedeflemez.
+        Bir çocuğa ait bilgilerin Google hizmetleri üzerinden işlendiğini düşünüyorsanız bizimle iletişime geçin ve/veya Google hesap/gizlilik ayarlarını kontrol edin.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>Seçenekleriniz</h3>
+      <ul>
+        <li>Uygunsa, cihaz/Google ayarlarından kişiselleştirilmiş reklamları kapatabilirsiniz.</li>
+        <li>Google Play Oyunlar’dan çıkış yaparak lider tablo özelliklerini sınırlayabilirsiniz (çıkışta sıralama çalışmayabilir).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>İletişim</h3>
+      <p>E-posta: <strong><a href="mailto:kodexia19@gmail.com">kodexia19@gmail.com</a></strong></p>
+      <div class="footer">Bu politika zaman zaman güncellenebilir. Değişiklikler için bu sayfayı kontrol edin.</div>
+    </div>
+  </section>
+
+  <!-- ARABIC -->
+  <section id="sec-ar" class="langsec rtl" lang="ar" dir="rtl">
+    <div class="panel anchor">
+      <h3>نظرة عامة</h3>
+      <p>
+        تشرح سياسة الخصوصية هذه كيفية التعامل مع المعلومات عند استخدام <strong>TUBBY</strong> ("التطبيق").
+        التطبيق عبارة عن لعبة على الهاتف وقد يعرض إعلانات وقد يوفر لوحات صدارة (ترتيب).
+      </p>
+
+      <div class="note">
+        <strong>نقطة أساسية:</strong> نحن لا نطلب ولا نخزّن داخل اللعبة بيانات شخصية مثل الاسم أو العنوان أو رقم الهاتف أو البريد الإلكتروني.
+        ومع ذلك قد تقوم بعض <strong>الخدمات التابعة لجهات خارجية</strong> بمعالجة بيانات معينة لتقديم الإعلانات ولوحات الصدارة.
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h3>الخدمات التي نستخدمها</h3>
+        <ul>
+          <li><strong>Google AdMob</strong> — لعرض الإعلانات.</li>
+          <li><strong>Google Play Games Services (لوحات الصدارة)</strong> — لإرسال النتائج وعرض ترتيبك/مركزك.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          هذه الخدمات مقدمة من Google وتخضع لسياسات الخصوصية الخاصة بها.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>المعلومات التي قد تتم معالجتها</h3>
+        <ul>
+          <li><strong>لوحات الصدارة:</strong> قد ترتبط النتائج وترتيبك بملفك في Google Play Games.</li>
+          <li><strong>الإعلانات:</strong> قد تعالج خدمات الإعلانات معرّفات الجهاز وإشارات استخدام أساسية لعرض الإعلانات وقياس أدائها.</li>
+          <li><strong>بيانات محلية:</strong> قد تُحفظ الإعدادات/التقدم محليًا على جهازك.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>كيف تُستخدم هذه المعلومات؟</h3>
+      <ul>
+        <li>لتوفير وظائف اللعب الأساسية (بما في ذلك الإعدادات المحلية).</li>
+        <li>لإرسال النتائج وعرض الترتيب في لوحات الصدارة.</li>
+        <li>لعرض الإعلانات وقياس أدائها.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>المشاركة</h3>
+      <p>
+        نحن لا نبيع بياناتك الشخصية. قد تتم معالجة البيانات بواسطة جهات خارجية (خدمات Google) فقط لتقديم الإعلانات ولوحات الصدارة.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>الأطفال</h3>
+      <p>
+        التطبيق غير مخصص لجمع بيانات شخصية من الأطفال عن قصد.
+        إذا كنت تعتقد أن بيانات طفل تمت معالجتها عبر خدمات Google، يرجى التواصل معنا و/أو مراجعة إعدادات حساب Google والخصوصية.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3>خياراتك</h3>
+      <ul>
+        <li>يمكنك إيقاف الإعلانات المخصصة (إن توفرت) من إعدادات الجهاز/Google.</li>
+        <li>يمكنك تسجيل الخروج من Google Play Games لتقييد ميزات لوحات الصدارة (قد لا يعمل الترتيب عند تسجيل الخروج).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>التواصل</h3>
+      <p>البريد الإلكتروني: <strong><a href="mailto:kodexia19@gmail.com">kodexia19@gmail.com</a></strong></p>
+      <div class="footer">قد نقوم بتحديث هذه السياسة من وقت لآخر. يرجى مراجعة هذه الصفحة لمعرفة أي تغييرات.</div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  (function(){
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const sections = {
+      en: document.getElementById('sec-en'),
+      de: document.getElementById('sec-de'),
+      tr: document.getElementById('sec-tr'),
+      ar: document.getElementById('sec-ar')
+    };
+
+    function setLang(lang){
+      tabs.forEach(t => t.classList.toggle('active', t.dataset.lang === lang));
+      Object.keys(sections).forEach(k => sections[k].classList.toggle('active', k === lang));
+      // Keep URL clean (optional): update hash
+      // location.hash = lang;
+    }
+
+    tabs.forEach(t => t.addEventListener('click', () => setLang(t.dataset.lang)));
+
+    // Optional: start with URL hash if provided (#en/#de/#tr/#ar)
+    const h = (location.hash || '').replace('#','').toLowerCase();
+    if (sections[h]) setLang(h);
+  })();
+</script>
+</body>
+</html>
